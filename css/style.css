@@ -11,7 +11,7 @@ html, body {
     overflow-x: hidden;
     padding-right: 17px;
     scroll-snap-points-y: repeat(100vh);
-    scroll-snap-type: mandatory;
+    scroll-snap-type: proximity;
     font-family: 'Exodus';
     font-size: 2vw;
     text-align: center;

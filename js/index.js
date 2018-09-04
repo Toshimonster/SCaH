@@ -80,10 +80,10 @@ window.onload = () => {
     let scrubmulti = (document.body.scrollTopMax / (14*vh))/2
     
 
-    for (var i = 0; i < runes.length; i++) {
+    /*for (var i = 0; i < runes.length; i++) {
         runes[i].src = runeImg[Math.floor(Math.random()*runeImg.length)]
-    }
-    document.getElementsByClassName("introductor")[0].src = "../images/runes/INTRODUCTOR.png"
+    }*/
+    //document.getElementsByClassName("introductor")[0].src = "../images/runes/INTRODUCTOR.png"
     setInterval(() => {
         navbarScrub.style["top"] = `${(26*vh) + (document.body.scrollTop / scrubmulti)}px`
         time += 1

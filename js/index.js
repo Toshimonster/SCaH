@@ -59,6 +59,7 @@ window.addEventListener('load',function(){
     window.parent.addEventListener('resize',function(){
           //when the browser window is resized; recalculate
           initializeV();
+          scrubmulti = (document.body.scrollTopMax / (14*vh))/2
     });
 });
 
@@ -66,6 +67,7 @@ window.addEventListener('load',function(){
 let time = 0
 window.onload = () => {
     let introBackground = document.getElementById("intro")
+    let discordBackground = document.getElementById("disc")
     let introTitle = document.getElementsByClassName("intro-Title")
     let fullTitle = document.getElementById("FullTitle")
     let title = document.getElementById("Title")
@@ -80,10 +82,10 @@ window.onload = () => {
     let scrubmulti = (document.body.scrollTopMax / (14*vh))/2
     
 
-    /*for (var i = 0; i < runes.length; i++) {
+    for (var i = 0; i < runes.length; i++) {
         runes[i].src = runeImg[Math.floor(Math.random()*runeImg.length)]
-    }*/
-    //document.getElementsByClassName("introductor")[0].src = "../images/runes/INTRODUCTOR.png"
+    }
+    document.getElementsByClassName("introductor")[0].src = "../images/runes/INTRODUCTOR.png"
     setInterval(() => {
         navbarScrub.style["top"] = `${(26*vh) + (document.body.scrollTop / scrubmulti)}px`
         time += 1
@@ -112,6 +114,7 @@ window.onload = () => {
                 profiles.style["top"] = "0px"
                 discord.style["left"] = "0px"
             }
+            discordBackground.style["background-position"] = `50% ${400 - ((document.body.scrollTop / vh) * 2)}%`
         }
     }, 1)
 }

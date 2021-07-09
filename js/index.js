@@ -1,10 +1,10 @@
 let runeImg = [
-    "../images/runes/A.png",
-    "../images/runes/D.png",
-    "../images/runes/G.png",
-    "../images/runes/K.png",
-    "../images/runes/N.png",
-    "../images/runes/R.png"
+    "./images/runes/A.png",
+    "./images/runes/D.png",
+    "./images/runes/G.png",
+    "./images/runes/K.png",
+    "./images/runes/N.png",
+    "./images/runes/R.png"
 ]
 
 let vw = 0
